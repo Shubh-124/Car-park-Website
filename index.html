@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="sedan.png" />
+</head>
+
+<body>
+    <h1 class="block-effect" style="--td: 1.2s;margin-top:1% ;">
+        <div class="block-reveal" style="text-align: center; --bc: #4040bf; --d: .1s">Smart</div>
+        <div class="block-reveal" style="--bc: #bf4060; --d: .5s">Parking System</div>
+    </h1>
+    <button onclick="goToDashboard()">Dashboard</button>
+    <button onclick="goToCar()">Car Park</button>
+
+    <script>
+        function goToDashboard() {
+            window.location.href = 'dashboard.html'
+        }
+        function goToCar() {
+            window.location.href = 'carpark.html'
+        }
+    </script>
+
+</body>
+
+</html>

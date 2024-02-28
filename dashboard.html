@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <h1 class="block-effect" style="--td: 1.2s; margin-top:30% ;">
+        <div class="block-reveal" style="text-align: center; --bc: red; --d: .1s">Admin</div>
+        <div class="block-reveal" style="--bc: yellow; --d: .5s">Dashboard</div>
+    </h1>
+
+    <div class="dashboard">
+        <p id="length" style="text-align: center; background-color: white; border: 2px solid red;font-weight: bold;">
+        </p>
+
+        <table id="mapTable">
+            <thead>
+                <tr>
+                    <th>Plate</th>
+                    <th>Time_In</th>
+                    <th>Time_Out</th>
+                    <th>Fare</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <button onclick="goBack()">Back</button>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        function goBack() {
+            window.location.href = 'index.html'
+
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Wheels</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            /* Set the background color */
+        }
+
+        .car {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wheel {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            animation: rotateWheel 1s linear infinite;
+        }
+
+        .wheel.left {
+            left: 15px;
+        }
+
+        .wheel.right {
+            right: 15px;
+        }
+
+        @keyframes rotateWheel {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; color: white;">Rotating Wheels</h1>
+
+    <div class="car">
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+    </div>
+
+</body>
+
+</html>

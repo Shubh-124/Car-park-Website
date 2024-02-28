@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Park Status</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1 class="block-effect" style="--td: 1.2s; margin-top:3% ;">
+        <div class="block-reveal" style="text-align: center; --bc: turquoise; --d: .1s">Car</div>
+        <div class="block-reveal" style="--bc: yellow; --d: .5s">Park Status</div>
+    </h1>
+    <div class="container">
+        <div style="text-align: center; border:2px solid turquoise; margin:2%; background-color:white;">
+            <b>
+                Distance:
+            </b>
+        </div>
+        <div class="parent">
+            <div class="bulb" id="bulb1">
+                <span class="dist" id="val1">10</span>
+            </div>
+            <div class="bulb" id="bulb2">
+                <span class="dist" id="val2">10</span>
+            </div>
+            <div class="bulb" id="bulb3">
+                <span class="dist" id="val3">10</span>
+            </div>
+        </div>
+    </div>
+    <button onclick="goBack()">Back</button>
+    <script>
+        function goBack() {
+            window.location.href = 'index.html'
+
+        }
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="script1.js"></script>
+</body>
+
+</html>
